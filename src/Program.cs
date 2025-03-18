@@ -27,7 +27,6 @@ namespace ThreadedServer
                 Console.WriteLine($"Client connected: {client.Client.RemoteEndPoint}");
                 var th = new Thread(() => ProcessData(client));
                 th.Start();
-                //th.Join();
             }
         }
 
